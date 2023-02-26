@@ -1,30 +1,31 @@
 // Write your solution here!
-let cats = ['Milo', 'Otis', 'Garfield']
+let cats = ["Milo", "Otis", "Garfield"];
 function destructivelyAppendCat(name) {
-    return (cats.push("Ralph"))
+  return cats.push("Ralph");
 }
 function destructivelyPrependCat(name) {
-    return (cats.unshift("Bob"))
+  return cats.unshift("Bob");
 }
 function destructivelyRemoveLastCat(name) {
-    return cats.pop();
+  return cats.pop();
 }
 function destructivelyRemoveFirstCat(name) {
-    return cats.shift();
+  return cats.shift();
 }
 function appendCat(name) {
-    const newName = [...cats, name];
-    return newName
-
+  const newName = [...cats, name];
+  return newName;
 }
 function prependCat(name) {
-    const newName = [name, ...cats];
-    return newName
-
+  const newName = [name, ...cats];
+  return newName;
 }
 function removeLastCat() {
-    return (cats.slice(0, cats.length - 1))
+  return cats.slice(0, cats.length - 1);
 }
 function removeFirstCat() {
-    return (cats.slice(1))
+  return cats.slice(1);
 }
+
+// jutst testing to see if my commits are verified or not
+console.log("testing testing 123");
